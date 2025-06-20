@@ -6,7 +6,7 @@ export function App() {
 
   useEffect(() => {
     async function init() {
-      const isTma = await isTMA("complete");
+      const isTma = await (isTMA() && isTMA("complete"));
       setIsTmaResult(isTma);
     }
 
